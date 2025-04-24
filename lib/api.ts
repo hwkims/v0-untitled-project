@@ -1,0 +1,223 @@
+// This would be a real API call in a production app
+export async function fetchStockData() {
+  // For demo purposes, we'll return mock data
+  // In a real app, you would fetch from an API
+  return [
+    {
+      code: "005930",
+      name: "삼성전자",
+      price: 55500,
+      change: -0.36,
+      sector: "전자",
+      marketCap: 331000000000000,
+      volume: 7238000000,
+    },
+    {
+      code: "000660",
+      name: "SK하이닉스",
+      price: 134000,
+      change: 1.52,
+      sector: "반도체",
+      marketCap: 97000000000000,
+      volume: 3500000000,
+    },
+    {
+      code: "035420",
+      name: "NAVER",
+      price: 186500,
+      change: 0.81,
+      sector: "서비스",
+      marketCap: 30600000000000,
+      volume: 980000000,
+    },
+    {
+      code: "035720",
+      name: "카카오",
+      price: 49800,
+      change: -0.4,
+      sector: "서비스",
+      marketCap: 22100000000000,
+      volume: 1250000000,
+    },
+    {
+      code: "005380",
+      name: "현대차",
+      price: 175500,
+      change: -1.13,
+      sector: "자동차",
+      marketCap: 37500000000000,
+      volume: 850000000,
+    },
+    {
+      code: "051910",
+      name: "LG화학",
+      price: 388000,
+      change: -0.26,
+      sector: "화학",
+      marketCap: 27400000000000,
+      volume: 320000000,
+    },
+    {
+      code: "207940",
+      name: "삼성바이오로직스",
+      price: 788000,
+      change: 0.51,
+      sector: "제약",
+      marketCap: 52000000000000,
+      volume: 110000000,
+    },
+    {
+      code: "006400",
+      name: "삼성SDI",
+      price: 426500,
+      change: 1.67,
+      sector: "전자",
+      marketCap: 29300000000000,
+      volume: 430000000,
+    },
+    {
+      code: "042660",
+      name: "두산에너빌리티",
+      price: 16050,
+      change: -0.62,
+      sector: "중공업",
+      marketCap: 9700000000000,
+      volume: 2800000000,
+    },
+    {
+      code: "373220",
+      name: "LG에너지솔루션",
+      price: 388000,
+      change: 0.78,
+      sector: "전자",
+      marketCap: 90700000000000,
+      volume: 250000000,
+    },
+  ]
+}
+
+export async function fetchCryptoData() {
+  // For demo purposes, we'll return mock data
+  return [
+    {
+      code: "BTC/KRW",
+      name: "비트코인",
+      price: 45000000,
+      change: 2.1,
+      marketCap: 850000000000000,
+      volume: 25000000000000,
+      symbol: "BTC",
+      supply: 19000000,
+      maxSupply: 21000000,
+    },
+    {
+      code: "ETH/KRW",
+      name: "이더리움",
+      price: 2500000,
+      change: 1.8,
+      marketCap: 300000000000000,
+      volume: 15000000000000,
+      symbol: "ETH",
+      supply: 120000000,
+      maxSupply: null,
+    },
+    {
+      code: "XRP/KRW",
+      name: "리플",
+      price: 700,
+      change: -0.5,
+      marketCap: 35000000000000,
+      volume: 2000000000000,
+      symbol: "XRP",
+      supply: 45000000000,
+      maxSupply: 100000000000,
+    },
+    {
+      code: "SOL/KRW",
+      name: "솔라나",
+      price: 120000,
+      change: 3.2,
+      marketCap: 50000000000000,
+      volume: 5000000000000,
+      symbol: "SOL",
+      supply: 410000000,
+      maxSupply: null,
+    },
+    {
+      code: "ADA/KRW",
+      name: "에이다",
+      price: 550,
+      change: 0.7,
+      marketCap: 20000000000000,
+      volume: 1500000000000,
+      symbol: "ADA",
+      supply: 35000000000,
+      maxSupply: 45000000000,
+    },
+    {
+      code: "DOGE/KRW",
+      name: "도지코인",
+      price: 120,
+      change: -1.2,
+      marketCap: 15000000000000,
+      volume: 1000000000000,
+      symbol: "DOGE",
+      supply: 140000000000,
+      maxSupply: null,
+    },
+    {
+      code: "DOT/KRW",
+      name: "폴카닷",
+      price: 8500,
+      change: 1.5,
+      marketCap: 10000000000000,
+      volume: 800000000000,
+      symbol: "DOT",
+      supply: 1200000000,
+      maxSupply: null,
+    },
+    {
+      code: "SHIB/KRW",
+      name: "시바이누",
+      price: 0.0035,
+      change: -0.8,
+      marketCap: 2000000000000,
+      volume: 500000000000,
+      symbol: "SHIB",
+      supply: 589000000000000,
+      maxSupply: null,
+    },
+    {
+      code: "MATIC/KRW",
+      name: "폴리곤",
+      price: 950,
+      change: 2.3,
+      marketCap: 9000000000000,
+      volume: 700000000000,
+      symbol: "MATIC",
+      supply: 9500000000,
+      maxSupply: 10000000000,
+    },
+    {
+      code: "AVAX/KRW",
+      name: "아발란체",
+      price: 35000,
+      change: 1.1,
+      marketCap: 12000000000000,
+      volume: 900000000000,
+      symbol: "AVAX",
+      supply: 350000000,
+      maxSupply: 720000000,
+    },
+  ]
+}
+
+// In a real app, you would fetch real-time stock data from an API
+// For example:
+/*
+export async function fetchRealTimeStockData(stockCode: string) {
+  const response = await fetch(`https://api.example.com/stocks/${stockCode}/realtime`)
+  const data = await response.json()
+  return data
+}
+*/
